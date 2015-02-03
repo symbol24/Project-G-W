@@ -1,0 +1,62 @@
+﻿using UnityEngine;
+using UnitySampleAssets.CrossPlatformInput;
+
+namespace UnitySampleAssets._2D
+{
+
+    [RequireComponent(typeof (PlatformerCharacter2D))]
+    public class Platformer2DUserControl : MonoBehaviour
+    {
+        private PlatformerCharacter2D character;
+        private int jump = 0;
+        public float speed = 1;
+
+        private void Awake()
+        {
+            character = GetComponent<PlatformerCharacter2D>();
+        }
+
+        private void Update()
+        {
+            //if(!jump)
+            // Read the jump input in Update so button presses aren't missed.
+            //jump = CrossPlatformInputManager.GetButtonDown("Jump");
+        }
+
+        private void FixedUpdate()
+        {
+            //bool crouch = Input.GetKey(KeyCode.LeftControl);
+
+            //float h = CrossPlatformInputManager.GetAxis("Horizontal");
+
+            character.Move(speed, false, jump);
+
+            jump = 0;
+        }
+
+        private void OnTriggerEnter2D(Collider2D collider)
+        {
+            if(collider.tag == "Jump")
+            {
+                if ((character.facingRight && collider.GetComponent<Jump>().right) || (!character.facingRight && collider.GetComponent<Jump>().left))
+                {
+                    jump = 1;
+                }
+            }
+            else if (collider.tag == "Flip")
+            {
+                speed *= -1;
+                character.Flip();
+            }
+            else if (collider.tag == "Bounce")
+            {
+                jump = 3;
+            }
+            else if (collider.tag == "Death")
+            {
+                Debug.Log("Collided with Death");
+                character.Death();
+            }
+        }
+    }
+}
