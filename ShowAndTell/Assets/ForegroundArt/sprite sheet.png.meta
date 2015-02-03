@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: c2c01d3f10c36ce489626ff51641e51c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: char_idle_1
+    21300002: char_idle_2
+    21300004: char_idle_3
+    21300006: arrow
+    21300008: char_walk_1
+    21300010: char_walk_2
+    21300012: char_fall_1
+    21300014: char_fall_2
+    21300016: char_fall_land
+    21300018: platform
+    21300020: platform_faded
+    21300022: bouncer_up
+    21300024: bouncer_down
+    21300026: spikes_horz_open
+    21300028: spikes_horz_faded
+    21300030: spike_vert_open
+    21300032: spikes_vert_faded
+    21300034: gate_open
+    21300036: gate_closed
+    21300038: fan_full
+    21300040: fan_vanished
+    21300042: fan_1
+    21300044: fan_2
+    21300046: fan_3
+    21300048: fan_4
+    21300050: ball_large_full
+    21300052: ball_med_full
+    21300054: ball_small_full
+    21300056: ball_large_faded
+    21300058: ball_med_faded
+    21300060: ball_small_faded
+    21300062: switch_left
+    21300064: switch_right
+    21300066: button_up
+    21300068: button_down
+    21300070: flag_active
+    21300072: flag_fade
+    21300074: wind_full
+    21300076: wind_vanished
+    21300078: wind_1
+    21300080: wind_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: char_idle_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 538
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_idle_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 538
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_idle_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 538
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 573
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_walk_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 483
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_walk_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 483
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_fall_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 434
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_fall_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 439
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_fall_land
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 429
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: platform
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 536
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: platform_faded
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 472
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bouncer_up
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 536
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bouncer_down
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 472
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spikes_horz_open
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 562
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spikes_horz_faded
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 562
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spike_vert_open
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 472
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spikes_vert_faded
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 472
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gate_open
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 344
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gate_closed
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 344
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fan_full
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 249
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fan_vanished
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 249
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fan_1
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 249
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fan_2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 249
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fan_3
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 249
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fan_4
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 249
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball_large_full
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 66
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball_med_full
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 77
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball_small_full
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 87
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball_large_faded
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 66
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball_med_faded
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 77
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball_small_faded
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 87
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: switch_left
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 216
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: switch_right
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 216
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: button_up
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 216
+        width: 48
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: button_down
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 216
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flag_active
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 344
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flag_fade
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 344
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wind_full
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wind_vanished
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wind_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 152
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wind_2
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
