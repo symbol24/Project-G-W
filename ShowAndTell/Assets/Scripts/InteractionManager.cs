@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class InteractionManager : MonoBehaviour {
 
+    public AudioSource audioSource;
     List<GameObject> interactions;
     public GameObject pointer;
     int cursor;
@@ -22,15 +23,18 @@ public class InteractionManager : MonoBehaviour {
         {
             MoveCursor(-1);
             MovePointer();
+            audioSource.Play();
         }
         if(Control.getKeyDownRight())
         {
             MoveCursor(+1);
             MovePointer();
+            audioSource.Play();
         }
         if(Control.getKeyDownSpace())
         {
             interactions[cursor].GetComponent<Interaction>().Interact();
+            audioSource.Play();
         }
     }
 

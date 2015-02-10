@@ -10,6 +10,7 @@ namespace UnitySampleAssets._2D
         private PlatformerCharacter2D character;
         private int jump = 0;
         public float speed = 1;
+        private int wind = 0;
 
         private void Awake()
         {
@@ -29,14 +30,15 @@ namespace UnitySampleAssets._2D
 
             //float h = CrossPlatformInputManager.GetAxis("Horizontal");
 
-            character.Move(speed, false, jump);
+            character.Move(speed, false, jump, wind);
 
             jump = 0;
+            wind = 0;
         }
 
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            if(collider.tag == "Jump")
+            if (collider.tag == "Jump")
             {
                 if ((character.facingRight && collider.GetComponent<Jump>().right) || (!character.facingRight && collider.GetComponent<Jump>().left))
                 {
@@ -56,6 +58,23 @@ namespace UnitySampleAssets._2D
             {
                 Debug.Log("Collided with Death");
                 character.Death();
+            }
+        }
+
+        private void OnTriggerStay2D(Collider2D collider)
+        {
+            if (collider.tag == "Wind")
+            {
+                if (collider.GetComponent<Wind>().right)
+                {
+                    wind = 1;
+                    speed = wind;
+                }
+                else if (collider.GetComponent<Wind>().left)
+                {
+                    wind = -1;
+                    speed = wind;
+                }
             }
         }
     }
