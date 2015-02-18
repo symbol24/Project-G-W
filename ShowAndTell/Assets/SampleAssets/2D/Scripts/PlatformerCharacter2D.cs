@@ -68,6 +68,15 @@ namespace UnitySampleAssets._2D
                 rigidbody2D.isKinematic = true;
                 transform.position = new Vector3(transform.position.x + wind * 0.05f, transform.position.y, transform.position.z);
                 //rigidbody2D.velocity = new Vector2(wind * 2f, rigidbody2D.velocity.y);
+                if(wind == 1 && !facingRight)
+                {
+                    Flip();
+                }
+
+                if(wind == -1 && facingRight)
+                {
+                    Flip();
+                }
             }
             else
             {
@@ -120,7 +129,8 @@ namespace UnitySampleAssets._2D
         public void Death()
         {
             Debug.Log("Dead");
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            Application.LoadLevel(Application.loadedLevelName);
         }
     }
 }

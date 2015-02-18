@@ -32,6 +32,7 @@ namespace UnitySampleAssets._2D
 
             character.Move(speed, false, jump, wind);
 
+            //speed = 0.2f;
             jump = 0;
             wind = 0;
         }
@@ -68,12 +69,20 @@ namespace UnitySampleAssets._2D
                 if (collider.GetComponent<Wind>().right)
                 {
                     wind = 1;
-                    speed = wind;
+                    if(speed < 0)
+                    {
+                        speed *= -1;
+                    }
+                    //speed = wind;
                 }
                 else if (collider.GetComponent<Wind>().left)
                 {
                     wind = -1;
-                    speed = wind;
+                    if (speed > 0)
+                    {
+                        speed *= -1;
+                    }
+                    //speed = wind;
                 }
             }
         }
