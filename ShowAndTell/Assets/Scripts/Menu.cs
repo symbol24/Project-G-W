@@ -12,7 +12,8 @@ public class Menu : MonoBehaviour{
         if (quitButton)
         {
             Debug.Log("Quit");
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
+			Application.Quit();
         }
         else
         {

@@ -45,7 +45,7 @@ namespace UnitySampleAssets._2D
         }
 
 
-        public void Move(float move, bool crouch, int jump = 0, int wind = 0)
+        public void Move(float move, bool crouch, int jump, int wind)
         {
 
 
