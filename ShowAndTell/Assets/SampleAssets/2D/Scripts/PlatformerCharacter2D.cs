@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnitySampleAssets._2D
 {
@@ -126,11 +127,8 @@ namespace UnitySampleAssets._2D
             transform.localScale = theScale;
         }
 
-        public void Death()
-        {
-            Debug.Log("Dead");
-            //Destroy(gameObject);
-            Application.LoadLevel(Application.loadedLevelName);
-        }
+
+
+
     }
 }

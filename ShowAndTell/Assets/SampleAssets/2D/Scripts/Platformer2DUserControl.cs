@@ -11,10 +11,12 @@ namespace UnitySampleAssets._2D
         private int jump = 0;
         public float speed = 1;
         private int wind = 0;
+		private deathManager m_dManager;
 
         private void Awake()
         {
             character = GetComponent<PlatformerCharacter2D>();
+			m_dManager = GetComponent<deathManager>();
         }
 
         private void Update()
@@ -44,6 +46,7 @@ namespace UnitySampleAssets._2D
                 if ((character.facingRight && collider.GetComponent<Jump>().right) || (!character.facingRight && collider.GetComponent<Jump>().left))
                 {
                     jump = 1;
+					m_dManager.JumpCount();
                 }
             }
             else if (collider.tag == "Flip")
@@ -58,7 +61,7 @@ namespace UnitySampleAssets._2D
             else if (collider.tag == "Death")
             {
                 Debug.Log("Collided with Death");
-                character.Death();
+                m_dManager.DeathCount();
             }
         }
 
