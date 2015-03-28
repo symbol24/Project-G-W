@@ -36,6 +36,9 @@ public class InteractionManager : MonoBehaviour {
             interactions[cursor].GetComponent<Interaction>().Interact();
             audioSource.Play();
         }
+		if(Control.getKeyExit()){
+			Application.LoadLevel("menutest");
+		}
     }
 
     void MoveCursor(int offset)

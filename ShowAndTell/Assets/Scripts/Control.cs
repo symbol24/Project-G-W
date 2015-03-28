@@ -10,6 +10,8 @@ public static class Control {
 	public static KeyCode space = KeyCode.Space;
 
 	public static KeyCode up = KeyCode.UpArrow;
+
+	public static KeyCode exit = KeyCode.Escape;
 	
 	public static bool getKeyRight(){
 		return Input.GetKey(right);
@@ -37,4 +39,7 @@ public static class Control {
         return Input.GetKeyDown(space);
     }
 
+	public static bool getKeyExit(){
+		return Input.GetKeyDown(exit);
+	}
 }
